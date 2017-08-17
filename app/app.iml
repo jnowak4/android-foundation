@@ -110,6 +110,7 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 25 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="butterknife-7.0.1" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="backport-util-concurrent-3.1" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="maven-profile-2.2.1" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="xercesMinimal-1.9.6.2" level="project" />
@@ -138,15 +139,15 @@
     <orderEntry type="library" exported="" scope="TEST" name="robolectric-annotations-3.3.2" level="project" />
     <orderEntry type="library" exported="" name="rxjava-1.2.7" level="project" />
     <orderEntry type="library" exported="" name="jackson-core-2.7.3" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="javax.annotation-api-1.2" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="robolectric-3.3.2" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="javax.annotation-api-1.2" level="project" />
     <orderEntry type="library" exported="" name="jackson-databind-2.7.3" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="asm-tree-5.0.1" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="sqlite4java-0.282" level="project" />
     <orderEntry type="library" exported="" name="animated-vector-drawable-25.0.1" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="shadow-api-3.3.2" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="javawriter-2.1.1" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="maven-project-2.2.1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="javawriter-2.1.1" level="project" />
     <orderEntry type="library" exported="" name="dagger-2.9" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="robolectric-junit-3.3.2" level="project" />
     <orderEntry type="library" exported="" name="rxkotlin-1.0.0" level="project" />
