@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.corelogic"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "com.doapps.android.MockTestRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+ext {
+    supportLibVersion = '25.0.1'
+    lightCycleVersion = '1.6.1'
+}
+
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.0.1'
+
+
+
+    // lightcycle
+    compile "com.soundcloud.lightcycle:lightcycle-lib:$lightCycleVersion"
+    annotationProcessor "com.soundcloud.lightcycle:lightcycle-processor:$lightCycleVersion"
+    // lightcycle
+    compile 'io.reactivex:rxjava:1.2.7'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxkotlin:1.0.0'
+    compile 'com.squareup.okhttp3:okhttp:3.8.0'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.7.3'
+
+
+    compile 'com.google.dagger:dagger:2.9'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.9'
+
+
+    // Espresso
+    androidTestCompile "com.android.support:support-annotations:${supportLibVersion}"
+
+    androidTestAnnotationProcessor 'com.google.dagger:dagger-compiler:2.9'
+    testAnnotationProcessor 'com.google.dagger:dagger-compiler:2.9'
+
+
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testCompile 'junit:junit:4.12'
+}

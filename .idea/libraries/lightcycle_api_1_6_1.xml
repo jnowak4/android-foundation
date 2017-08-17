@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lightcycle-api-1.6.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soundcloud.lightcycle/lightcycle-api/1.6.1/bcdc42f23bbaf988ac3dd191ade90c1b1e2b9464/lightcycle-api-1.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soundcloud.lightcycle/lightcycle-api/1.6.1/ad055dbdf49f1d18dcfe5542badb9d513500227a/lightcycle-api-1.6.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
